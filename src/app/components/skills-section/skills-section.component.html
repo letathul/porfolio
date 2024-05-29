@@ -1,0 +1,13 @@
+<section id="skills">
+  <h2>Professional Skills</h2>
+  <div class="skills">
+    <ng-container *ngFor="let item of skills">
+      <div class="skill">
+        <h3>{{ item.name }}</h3>
+        <div class="progress-bar">
+          <div style="width: {{ item.value }}%"></div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</section>

@@ -1,0 +1,15 @@
+<div class="timeline">
+  <ng-container *ngFor="let item of experience">
+    <div class="timeline-entry">
+      <div>
+        <div class="timeline-date">{{ item.dateRange }}</div>
+        <div class="timeline-content">
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.company }}</p>
+          <p>{{ item.location }}</p>
+          <p>{{ item.description }}</p>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

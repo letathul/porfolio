@@ -1,0 +1,13 @@
+<div class="header-content">
+  <app-profile-pic></app-profile-pic>
+  <h1>{{ profileName }}</h1>
+  <p>{{ headLine }}</p>
+  <nav>
+    <a *ngFor="let item of titles" href="#{{ item }}">{{ item }}</a>
+  </nav>
+  <div class="social-media">
+    <a *ngFor="let item of socialMediaEntries" href="{{ item.value }}">{{
+      item.key
+    }}</a>
+  </div>
+</div>
